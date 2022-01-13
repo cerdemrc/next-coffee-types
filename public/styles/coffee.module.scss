@@ -1,24 +1,24 @@
-.coffee{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    & a{
-        padding:10px;
-        color: black;
-        text-decoration: none;
-        width: 100%;
-        background-color: palegoldenrod;
-        border-radius: 10px;
-        margin-top: 10px;
+.coffee {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& a {
+		padding: 10px;
+		color: black;
+		text-decoration: none;
+		width: 100%;
+		background-color: palegoldenrod;
+		border-radius: 10px;
+		margin-top: 10px;
 
-        &:first-child{
-            margin-top: 0;
-        }
+		&:first-child {
+			margin-top: 0;
+		}
 
-        &:hover{
-            background-color: rgb(153, 96, 6);
-            color: palegoldenrod;
-        }
-    }
+		&:hover {
+			background-color: rgb(153, 96, 6);
+			color: palegoldenrod;
+		}
+	}
 }
