@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../public/styles/homepage.module.scss'
 
 export default function Home() {
   return (
@@ -10,9 +9,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div className={styles.homepage}>
+      <div className="homepage">
         <Image src="/coffeetypes.jpg" width={500} height={500} />     
       </div>
+
+      <style jsc>{`
+        .homepage{
+          text-align: center;
+        }
+      `}</style>
     </div>
   )
 }
