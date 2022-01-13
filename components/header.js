@@ -16,6 +16,12 @@ export default function header() {
 				</li>
 				<li>
 					{' '}
+					<Link href='/benefit'>
+						<a>benefits</a>
+					</Link>
+				</li>
+				<li>
+					{' '}
 					<Link href='/about'>
 						<a>about</a>
 					</Link>
