@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import styles from '../public/styles/benefit.module.scss';
+import Head from 'next/head'
+import styles from '../public/styles/benefit.module.scss'
 
 export default function benefit() {
 	return (
@@ -31,5 +31,5 @@ export default function benefit() {
 				</p>
 			</div>
 		</div>
-	);
+	)
 }

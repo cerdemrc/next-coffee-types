@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import styles from '../public/styles/about.module.scss';
+import Head from 'next/head'
+import styles from '../public/styles/about.module.scss'
 
 export default function about() {
 	return (
@@ -16,5 +16,5 @@ export default function about() {
 				with 🤎
 			</div>
 		</div>
-	);
+	)
 }

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function coffeeDetail({ coffee }) {
 	return (
@@ -34,18 +34,18 @@ export default function coffeeDetail({ coffee }) {
 				}
 			`}</style>
 		</div>
-	);
+	)
 }
 
 export async function getServerSideProps(context) {
 	const req = await fetch(
 		`https://api.sampleapis.com/coffee/hot/${context.params.id}`
-	);
-	const res = await req.json();
+	)
+	const res = await req.json()
 
 	return {
 		props: {
 			coffee: res,
 		},
-	};
+	}
 }

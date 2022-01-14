@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './header.module.scss';
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from './header.module.scss'
 
 export default function header() {
 	return (
@@ -28,5 +28,5 @@ export default function header() {
 				</li>
 			</div>
 		</div>
-	);
+	)
 }
