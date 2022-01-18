@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../public/styles/about.module.scss'
+import Head from 'next/head';
+import { Box, Flex } from '@chakra-ui/react';
 
 export default function about() {
 	return (
@@ -8,13 +8,18 @@ export default function about() {
 				<title>About</title>
 			</Head>
 
-			<div className={styles.about}>
-				Developed by{' '}
-				<a href='https://github.com/cerdemrc' target='_blank'>
-					Ceren
-				</a>{' '}
-				with 🤎
-			</div>
+			<Flex justify='center' align='center'>
+				Developed by
+				<Box
+					as='a'
+					href='https://github.com/cerdemrc'
+					target='_blank'
+					color='rgb(102, 78, 78)'
+					fontWeight='bold'>
+					&nbsp;Ceren&nbsp;
+				</Box>
+				with 🧡
+			</Flex>
 		</div>
-	)
+	);
 }

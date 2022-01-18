@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../public/styles/benefit.module.scss'
+import Head from 'next/head';
+import { Text, Flex } from '@chakra-ui/react';
 
 export default function benefit() {
 	return (
@@ -8,9 +8,11 @@ export default function benefit() {
 				<title>Benefits of Coffee</title>
 			</Head>
 
-			<div className={styles.benefit}>
-				<h1>Benefits of Coffee</h1>
-				<p>
+			<Flex direction='column' paddingY='1.5rem'>
+				<Text fontWeight='bold' fontSize='xl' paddingBottom='1rem'>
+					Benefits of Coffee
+				</Text>
+				<Text lineHeight='1.5rem'>
 					The biggest benefit and the most known fact about coffee is that, no
 					matter how sleepy you are, it will ensure you jerk up to alertness. If
 					you are a black coffee lover, you just earned yourself some perks. An
@@ -28,8 +30,8 @@ export default function benefit() {
 					Having coffee helps you with a sharper mind and attentiveness. You
 					would hardly miss anything. It increases your body temperatures,
 					ensuring you keep warm in the cold days.
-				</p>
-			</div>
+				</Text>
+			</Flex>
 		</div>
-	)
+	);
 }

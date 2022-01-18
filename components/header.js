@@ -1,17 +1,24 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from './header.module.scss'
+import Link from 'next/link';
+import styles from './header.module.scss';
+import { Box } from '@chakra-ui/react';
 
 export default function header() {
 	return (
 		<div className={styles.header}>
-			<Link href='/'>
-				<Image src='/favicon.ico' width={50} height={50} />
-			</Link>
+			<Box
+				as='a'
+				href='/'
+				bgGradient='linear(to-r, gray.300, yellow.400, pink.200)'
+				bgClip='text'
+				fontSize={{ base: 'md', md: '2xl' }}
+				wordBreak='break-word'
+				fontWeight='extrabold'>
+				Types of Coffee
+			</Box>
 			<div className={styles.links}>
 				<li>
 					<Link href='/coffee'>
-						<a>coffee</a>
+						<a>coffees</a>
 					</Link>
 				</li>
 				<li>
@@ -28,5 +35,5 @@ export default function header() {
 				</li>
 			</div>
 		</div>
-	)
+	);
 }
